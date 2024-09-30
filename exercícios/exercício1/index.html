@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+   <link rel="stylesheet" type="text/css" href="estilo.css">
+   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2945/2945865.png">
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
+    <p>Preencha o formulário abaixo com: nome,marca,segmento,valor e se possível a venda do produto do estoque</p>
+    <hr>
+    <form id="tabelaForm">
+        <input type="text" name="produto" id="produto" placeholder="Digite o nome do produto" required>
+        <br><br>
+        <input type="text" name="marca" id="marca" placeholder="Digite a marca do produto" required>
+        <br><br>
+        <input type="text" name="segmento" id="segmento" placeholder="Digite o segmento do produto" required>
+        <br><br>
+        <input type="number" name="valor" id="valor" placeholder="Digite Valor do produto" required>
+        <br><br>
+        <input type="date" name="venda" id="venda">
+        <br><br>
+        <button type="button" onclick="adicionarProduto()">Adicionar produto</button> 
+    </form>
+    <br><br>
+
+    <table id="tabelaProdutos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Segmento</th>
+                <th>Valor</th>
+                <th>Venda</th>
+            </tr>
+        </thead>
+            <tbody>
+            </tbody>
+    </table> 
+    <script src="script.js"></script>
+</body>
+</html>
