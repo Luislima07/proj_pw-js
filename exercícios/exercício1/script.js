@@ -33,7 +33,7 @@ function adicionarProduto(){
         celProduto.innerHTML = produto;
         celMarca.innerHTML = marca;
         celSegmento.innerHTML = segmento;
-        celValor.innerHTML =  valor;
+        celValor.innerHTML = `R$ ${valor}`;
         celVenda.innerHTML = venda;
     
         proximoId++
