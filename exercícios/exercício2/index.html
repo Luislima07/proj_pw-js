@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos de Baskhara</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Cálculos de Bhaskhara com JS</h1>
+    <hr>
+    <form id="formCalculo">
+        <input type="number" id="a" name="a" placeholder="Digite o valor de A" required>
+        <br><br>
+        <input type="number" id="b" name="b" placeholder="Digite o valor de B" required>
+        <br><br>
+        <input type="number" id="c" name="c" placeholder="Digite o valor de C" required>
+        <br><br>
+        <input type="number" id="x" name="x" placeholder="Digite 1 para mostrar x' ou 2 para x''" required>
+        <br>
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+    <div class="imagem">
+        <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/mb/D/formula-de-bhaskara-equacao.jpg" alt="Fórmula de Bhaskhara">
+    </div>
+    <br><br>
+    <table id="tabelaResult">
+        <thead>
+            <tr>
+                <th>Num</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>X</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+    <script src="./calculo.js"></script>
+</body>
+</html>
