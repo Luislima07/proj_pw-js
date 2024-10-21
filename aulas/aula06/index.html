@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">   
+    <link rel="icon" type="image/png" href="https://static.thenounproject.com/png/25603-200.png">
+</head>
+<body>
+    <div class="mx-auto p-2 sticky-top" style="width: 25rem;"> <!--Título esitilizado-->
+        <h1>Formulário em JavaScript</h1>
+     
+    </div>
+  <hr>
+
+  <div class="container text-center">
+    <div class="row row-cols-5">
+      <div class="col">
+    <form id="linhaForm">
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        <br><br>
+        <input type="number" name="idade" id="idade" placeholder="DIgite sua idade" required>
+        <br><br>
+        <label for="admissao">Admissão</label>
+        <br><br>
+       <div class="col">
+        <input type="date" name="admissao" id="admissao" required>
+        <br><br>
+        <label for="demissao">Demissão</label>
+        <br><br>
+        <input type="date" name="demissao" id="demissao">
+        <br><br>
+        <button type="button" onclick="adicionarLinha()" class="btn btn-primary" >Adicionar</button></div>
+    </form> 
+    <br><br>
+    </div>
+</div>
+</div>
+
+    <table id="tabelaDados" class="table table-hover table-bordered"> <!--Tabela estilizada-->
+        <caption>*Lista de trabalhadores</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Admissão</th>
+                <th>Demissão</th>
+            </tr>
+        </thead>
+            <tbody>
+            </tbody>
+        </table>        
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
