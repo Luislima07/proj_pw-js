@@ -8,50 +8,51 @@
     <link rel="icon" type="image/png" href="https://static.thenounproject.com/png/25603-200.png">
 </head>
 <body>
-    <div class="mx-auto p-2 sticky-top" style="width: 25rem;"> <!--Título esitilizado-->
+    <div class="mx-auto p-2 sticky-top" style="width: 25rem;"> <!--Título estilizado-->
         <h1>Formulário em JavaScript</h1>
-     
     </div>
-  <hr>
+    <hr>
 
-  <div class="container text-center">
-    <div class="row row-cols-5">
-      <div class="col">
-    <form id="linhaForm">
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-        <br><br>
-        <input type="number" name="idade" id="idade" placeholder="DIgite sua idade" required>
-        <br><br>
-        <label for="admissao">Admissão</label>
-        <br><br>
-       <div class="col">
-        <input type="date" name="admissao" id="admissao" required>
-        <br><br>
-        <label for="demissao">Demissão</label>
-        <br><br>
-        <input type="date" name="demissao" id="demissao">
-        <br><br>
-        <button type="button" onclick="adicionarLinha()" class="btn btn-primary" >Adicionar</button></div>
-    </form> 
-    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="linhaForm">
+                    <div class="form-group mb-3">
+                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="number" name="idade" id="idade" class="form-control" placeholder="Digite sua idade" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="admissao">Admissão</label>
+                        <input type="date" name="admissao" id="admissao" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="demissao">Demissão</label>
+                        <input type="date" name="demissao" id="demissao" class="form-control">
+                    </div>
+                    <button type="button" onclick="adicionarLinha()" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <table id="tabelaDados" class="table table-hover table-bordered table-striped table-sm table-responsive-lg"> <!--Tabela estilizada-->
+                    <caption class="text-center">*Lista de trabalhadores</caption>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Admissão</th>
+                            <th>Demissão</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 
-    <table id="tabelaDados" class="table table-hover table-bordered"> <!--Tabela estilizada-->
-        <caption>*Lista de trabalhadores</caption>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Admissão</th>
-                <th>Demissão</th>
-            </tr>
-        </thead>
-            <tbody>
-            </tbody>
-        </table>        
     <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
