@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Gustavo">
+    <title>Jquery-3</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css"> 
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $("p").hide();
+            });
+            $('#show').click(function(){
+                $("p").show();
+            });
+        });
+    </script>    
+<body>
+    <div class="mx-auto p-2 sticky-top" style="width: 25rem; text-align: center;">
+        <h1>Aula 09 - Introdução a Jquery 3</h1>
+    </div>
+    <hr>
+    <p>Esse texto está sendo mostrado. Esconda!</p>
+    <button id="hide" class="btn btn-danger">Esconder</button>
+    <button id="show" class="btn btn-danger">Mostrar</button>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

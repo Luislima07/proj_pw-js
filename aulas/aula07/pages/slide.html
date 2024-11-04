@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Gustavo">
+    <title>Jquery-3</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css"> 
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#painel").slideDown("slow");
+            });
+        });
+    </script>    
+<body>
+    <div class="mx-auto p-2 sticky-top" style="width: 25rem; text-align: center;">
+        <h1>Aula 09 - Introdução a Jquery 3</h1>
+    </div>
+    <hr>
+    <div class="panel panel-body" id="flip">Esse texto está sendo mostrado. Slide!</div>
+    <div class="panel-body" id="painel">Mostando Slide</div>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
