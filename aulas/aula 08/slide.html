@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".painel").slideDown("slow");
+            });
+        });
+    </script>
+    <style>
+        .painel,.flip{
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(71, 65, 66);
+            border: solid 1px wheat;
+            color: whitesmoke;
+        }
+        .painel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="flip">Clique aqui para que o painel abaixe a mostre o texto!</div>
+    <div class="painel">Vai Corinthians!</div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

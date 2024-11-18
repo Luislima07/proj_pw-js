@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box1").fadeIn();
+                $(".box2").fadeIn("1000")
+                $(".box3").fadeIn(1000)
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Clique aqui</button>
+    <div class="box1" style="margin-top: 10px; height: 100px; width: 100px;background-color: black; display: none;"></div>
+    <div class="box2" style="margin-top: 10px; height: 100px; width: 100px;background-color: red; display: none;"></div>
+    <div class="box3" style="margin-top: 10px; height: 100px; width: 100px;background-color: blue; display: none;"></div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -10,10 +10,10 @@
     <script>
         $(document).ready(function(){
             $('#hide').click(function(){
-                $("p").hide();
+                $(".objeto").hide();
             });
             $('#show').click(function(){
-                $("p").show();
+                $(".objeto").show();
             });
         });
     </script>    
@@ -22,8 +22,9 @@
         <h1>Aula 09 - Introdução a Jquery 3</h1>
     </div>
     <hr>
-    <p>Esse texto está sendo mostrado. Esconda!</p>
-    <button id="hide" class="btn btn-danger">Esconder</button>
+    <p style="text-align:center;" class="objeto">Esse texto está sendo mostrado. Esconda!</p>
+    <p style="text-align:center;">Esse não</p>
+    <button id="hide" class="btn btn-danger" style="margin-left: 55rem;">Esconder</button>
     <button id="show" class="btn btn-danger">Mostrar</button>
 
     <script src="./JS/bootstrap.bundle.min.js"></script>
